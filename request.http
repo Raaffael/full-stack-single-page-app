@@ -1,0 +1,39 @@
+
+###
+GET   http://localhost:3000/items
+Content-Type: application/json
+
+###
+GET   http://localhost:3000/items/3
+Content-Type: application/json
+
+###
+POST  http://localhost:3000/items
+Content-Type: application/json
+
+{
+    "name":"curtain",
+    "price":20
+}
+
+###
+
+PATCH  http://localhost:3000/items/5
+Content-Type: application/json
+
+{
+    "name":"metal spoon"
+}
+###
+
+PATCH  http://localhost:3000/items/5
+Content-Type: application/json
+
+{
+    "price":26
+}
+
+###
+
+DELETE   http://localhost:3000/items/8
+Content-Type: application/json
